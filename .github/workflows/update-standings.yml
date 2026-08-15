@@ -18,7 +18,8 @@ jobs:
           node-version: '22'
       - name: APIから順位を取得
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          DEBUG: 'true'
         run: node scripts/update-data.mjs
       - name: 変更を保存
         run: |
