@@ -1,5 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';
-const root=path.resolve(import.meta.dirname,'..'),now='2026-08-16T21:00:00.000Z';
+const root=path.resolve(import.meta.dirname,'..'),now='2026-08-15T21:00:00.000Z';
 const sets={
 j1:['鹿島アントラーズ','柏レイソル','浦和レッズ','京都サンガF.C.','サンフレッチェ広島','ヴィッセル神戸','川崎フロンターレ','FC町田ゼルビア','ガンバ大阪','セレッソ大阪','ファジアーノ岡山','アビスパ福岡','FC東京','清水エスパルス','東京ヴェルディ','名古屋グランパス','横浜F・マリノス','湘南ベルマーレ','アルビレックス新潟','横浜FC'],
 pl:['Arsenal','Manchester City','Liverpool','Chelsea','Newcastle United','Manchester United','Tottenham Hotspur','Aston Villa','Brighton','Brentford','Crystal Palace','Fulham','Everton','West Ham United','Bournemouth','Wolverhampton','Nottingham Forest','Leeds United','Burnley','Sunderland'],
