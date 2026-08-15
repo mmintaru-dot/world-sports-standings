@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07182f">
+  <meta name="description" content="世界の主要サッカー・野球リーグの順位をスマホで見やすく確認できます。">
+  <title>WORLD TABLE | 世界のスポーツ順位表</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar"><a class="brand" href="#home"><span class="brand-mark">WT</span><span>WORLD TABLE<small>世界のスポーツ順位表</small></span></a><button id="theme" class="icon-btn" aria-label="配色を切り替える">◐</button></div>
+    <div class="hero-copy"><p class="eyebrow">STANDINGS, MADE SIMPLE.</p><h1>世界の熱戦を、<br><em>ひとつの順位表で。</em></h1><p>国とリーグを選ぶだけ。サッカーと野球の最新順位を、スマートフォンで素早く確認できます。</p></div>
+  </header>
+  <main>
+    <section id="quick" class="quick hidden" aria-label="クイックアクセス"></section>
+    <section id="sports" class="sport-switch" aria-label="競技を選ぶ">
+      <button class="sport-card active" data-sport="football"><span class="sport-icon">⚽</span><span><small>FOOTBALL</small>サッカー</span><b>7 LEAGUES</b></button>
+      <button class="sport-card" data-sport="baseball"><span class="sport-icon">⚾</span><span><small>BASEBALL</small>野球</span><b>1 LEAGUE</b></button>
+    </section>
+    <section class="browser">
+      <div class="section-head"><div><p class="eyebrow">CHOOSE A LEAGUE</p><h2 id="league-title">サッカーリーグ</h2></div><span id="updated" class="updated">最終更新：--</span></div>
+      <div id="league-grid" class="league-grid"></div>
+    </section>
+    <section id="standings" class="standings hidden" aria-live="polite">
+      <div class="standings-head"><button id="back" class="back">← リーグ一覧</button><button id="favorite" class="favorite" aria-label="お気に入りに追加">☆ お気に入り</button></div>
+      <div class="league-hero"><div><span id="flag" class="flag"></span><p id="country"></p><h2 id="selected-title"></h2><p id="season"></p></div><div id="league-badge" class="league-badge"></div></div>
+      <div id="notice" class="notice hidden"></div>
+      <div id="filters" class="filters hidden"></div>
+      <div class="table-wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+      <p class="swipe-note">← 横にスワイプすると詳細を確認できます →</p>
+    </section>
+  </main>
+  <footer><span class="brand-mark">WT</span><p>WORLD TABLE<br><small>毎日更新・閲覧時のAPI呼び出しなし</small></p><a href="README.md">このサイトについて</a></footer>
+  <script src="game.js"></script>
+</body>
+</html>
